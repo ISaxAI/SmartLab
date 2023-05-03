@@ -12,6 +12,15 @@
         android:theme="@style/Theme.SmartLab"
         tools:targetApi="31">
         <activity
+            android:name=".Enter"
+            android:exported="false" />
+        <activity
+            android:name=".Onboard3"
+            android:exported="false" />
+        <activity
+            android:name=".Onboard2"
+            android:exported="false" />
+        <activity
             android:name=".Onboard1"
             android:exported="false" />
         <activity

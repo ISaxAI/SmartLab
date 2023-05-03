@@ -11,18 +11,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_main);
 
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                //This method will be executed once the timer is over
-                // Start your app main activity
-                Intent i = new Intent(MainActivity.this, Onboard1.class);
-                startActivity(i);
-                // close this activity
-                finish();
-            }
+
+        new Handler().postDelayed(() -> {
+            Intent i = new Intent(MainActivity.this, Onboard1.class);
+            startActivity(i);
+            finish();
         }, 3000);
     }
 
